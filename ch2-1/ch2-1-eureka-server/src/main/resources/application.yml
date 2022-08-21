@@ -5,6 +5,7 @@ spring:
     serialization:
       FAIL_ON_EMPTY_BEANS: false
 eureka:
+  environment: hcg
   server:
     use-read-only-response-cache: false
     response-cache-auto-expiration-in-seconds: 10
