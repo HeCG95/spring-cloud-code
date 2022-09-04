@@ -3,7 +3,7 @@ spring:
     name: consul-override-consumer
   cloud:
     consul:
-      host: 127.0.0.1    # consul 启动地址
+      host: 192.168.177.110    # consul 启动地址
       port: 8500         # consul 启动端口
       discovery:
         server-list-query-tags:     # 注意 server-list-query-tags 是一个 map

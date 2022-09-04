@@ -5,5 +5,5 @@ spring:
     name: consul-override-consumer-new
   cloud:
     consul:
-      host: 127.0.0.1    # consul 启动地址
+      host: 192.168.177.110    # consul 启动地址
       port: 8500         # consul 启动端口

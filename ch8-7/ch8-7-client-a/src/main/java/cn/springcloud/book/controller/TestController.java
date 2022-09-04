@@ -47,6 +47,10 @@ public class TestController {
 	        String paraName = (String)enu.nextElement();  
 	        bodyParams.put(paraName, request.getParameter(paraName));
         }
+
+		String header= request.getHeader("result");
+		System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>> : "+header);
+
         return bodyParams;
 	}
 }
