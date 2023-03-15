@@ -16,7 +16,7 @@
     <url>http://springcloud.cn</url>
 
     <properties>
-        <spring-cloud.version>Finchley.RELEASE</spring-cloud.version>
+        <spring-cloud.version>2021.0.4</spring-cloud.version>
     </properties>
 
     <dependencyManagement>

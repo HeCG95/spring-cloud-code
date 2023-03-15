@@ -3,7 +3,7 @@
     <parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.0.3.RELEASE</version>
+		<version>2.7.4</version>
 	</parent>
     <modelVersion>4.0.0</modelVersion>
 	<groupId>cn.springcloud.book</groupId>
@@ -26,7 +26,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.8</java.version>
-        <spring-cloud.version>Finchley.RELEASE</spring-cloud.version>
+        <spring-cloud.version>2021.0.4</spring-cloud.version>
         <common.version>0.0.1-SNAPSHOT</common.version>
     </properties>
 
