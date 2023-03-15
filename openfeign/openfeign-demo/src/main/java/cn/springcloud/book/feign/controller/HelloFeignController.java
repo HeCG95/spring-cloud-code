@@ -19,4 +19,9 @@ public class HelloFeignController {
         return helloFeignService.searchRepo(queryStr);
     }
 
+    @GetMapping(value = "/search/zip")
+    public ResponseEntity<byte[]> searchGithubRepoByStrZip(@RequestParam("str") String queryStr) {
+        return helloFeignService.searchRepo2(queryStr);
+    }
+
 }

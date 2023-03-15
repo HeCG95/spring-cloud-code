@@ -19,4 +19,7 @@ public interface HelloFeignService {
     @RequestMapping(value = "/search/repositories", method = RequestMethod.GET)
     String searchRepo(@RequestParam("q") String queryStr);
 
+    @RequestMapping(value = "/search/repositories", method = RequestMethod.GET)
+    ResponseEntity<byte[]> searchRepo2(@RequestParam("q") String queryStr);
+
 }
