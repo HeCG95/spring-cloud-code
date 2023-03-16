@@ -8,7 +8,7 @@ http://localhost:8010/search/github?str=spring-cloud-dubbo
 
 ### 2.启动访问 开启了Gzip压缩
 
-http://localhost:8011/search/zip?str=spring-cloud-dubbo
+http://localhost:8010/search/zip?str=spring-cloud-dubbo
 
 
 

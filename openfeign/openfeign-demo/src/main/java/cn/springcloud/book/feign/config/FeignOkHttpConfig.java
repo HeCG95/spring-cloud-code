@@ -10,6 +10,12 @@ import org.springframework.context.annotation.Configuration;
 
 import java.util.concurrent.TimeUnit;
 
+/**
+ * @author HeCG
+ * @description xxx
+ * @date 2023/3/16 13:55
+ * @since 1.0
+ */
 @Configuration
 @ConditionalOnClass(Feign.class)
 @AutoConfigureBefore(FeignAutoConfiguration.class)
@@ -17,7 +23,7 @@ public class FeignOkHttpConfig {
     @Bean
     public okhttp3.OkHttpClient okHttpClient(){
         return new okhttp3.OkHttpClient.Builder()
-                 //设置连接超时
+                //设置连接超时
                 .connectTimeout(60, TimeUnit.SECONDS)
                 //设置读超时
                 .readTimeout(60, TimeUnit.SECONDS)
