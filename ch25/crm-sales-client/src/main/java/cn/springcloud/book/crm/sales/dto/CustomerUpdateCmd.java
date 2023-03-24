@@ -1,7 +1,0 @@
-package cn.springcloud.book.crm.sales.dto;
-
-import org.xujin.halo.dto.Command;
-
-public class CustomerUpdateCmd extends Command{
-
-}
