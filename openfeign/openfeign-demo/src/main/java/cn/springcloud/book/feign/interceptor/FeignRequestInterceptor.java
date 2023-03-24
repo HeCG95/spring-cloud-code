@@ -1,15 +1,17 @@
-package cn.springcloud.book.feign.config;
+package cn.springcloud.book.feign.interceptor;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import feign.RequestInterceptor;
 import feign.RequestTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
 
 import java.io.IOException;
 import java.util.*;
 
+@Component
 public class FeignRequestInterceptor implements RequestInterceptor {
 
     @Autowired
@@ -21,12 +23,13 @@ public class FeignRequestInterceptor implements RequestInterceptor {
         if (template.method().equals("GET") && template.body() != null) {
             try {
                 JsonNode jsonNode = objectMapper.readTree(template.body());
-                template.body(null);
+                template.body(new String());
 
                 Map<String, Collection<String>> queries = new HashMap<>();
                 buildQuery(jsonNode, "", queries);
                 template.queries(queries);
             } catch (IOException e) {
+                //提示:根据实践项目情况处理此处异常，这里不做扩展。
                 e.printStackTrace();
             }
         }
