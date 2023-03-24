@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>hello-world</module>
+        <module>auto-config</module>
     </modules>
 
 </project>
