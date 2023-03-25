@@ -15,6 +15,8 @@
         <module>hello-world</module>
         <module>auto-config</module>
         <module>auto-config2</module>
+        <module>auto-config-old</module>
+        <module>auto-config-new</module>
     </modules>
 
 </project>
