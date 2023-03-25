@@ -17,6 +17,9 @@
         <module>auto-config2</module>
         <module>auto-config-old</module>
         <module>auto-config-new</module>
+        <module>indexed-a</module>
+        <module>indexed-b</module>
+        <module>indexed-usage</module>
     </modules>
 
 </project>
